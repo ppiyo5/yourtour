@@ -1,0 +1,51 @@
+spring:
+  thymeleaf:
+    cache: false
+  profiles:
+    active: local
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    generate-ddl: false
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sample?useSSL=false&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+  session.store-type: none
+
+---
+
+logging:
+  level:
+    net:
+      nigne: info
+    org:
+      hibernate: info
+      springframework:
+        web: info
+        security: info
+
+---
+
+# errorpage custom
+
+#server:
+#  error:
+#    whitelabel:
+#      enabled: false
+
+---
+
+# fileupload size
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+
+

@@ -1,0 +1,12 @@
+server:
+  port: 8070
+
+project:
+  base-dir: file:////C:/Users/SOJIN/Documents/yourtour
+
+spring:
+  resources:
+    static-locations: ${project.base-dir}/src/main/resources/static/
+
+  thymeleaf:
+    prefix: ${project.base-dir}/src/main/resources/templates/
