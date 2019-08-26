@@ -1,0 +1,448 @@
+POST http://localhost:8070/seller/login
+Content-Type: application/json
+
+{
+  "id": "rosie",
+  "password": "1234"
+}
+
+<> 2019-08-26T063151.200.json
+
+###
+
+POST http://localhost:8070/seller/login
+Content-Type: application/json
+
+{
+  "id": "rosie2",
+  "password": "1234"
+}
+
+<> 2019-08-26T063141.200.json
+
+###
+
+POST http://localhost:8070/seller/login
+Content-Type: application/json
+
+{
+  "id": "rosie2",
+  "password": "12344"
+}
+
+<> 2019-08-26T063123.200.json
+
+###
+
+POST http://localhost:8070/seller/login
+Content-Type: application/json
+
+{
+  "id": "rosie22",
+  "password": "1234"
+}
+
+<> 2019-08-26T063102.200.json
+
+###
+
+POST http://localhost:8070/seller/login
+Content-Type: application/json
+
+{
+  "id": "rosie22",
+  "password": "1234"
+}
+
+<> 2019-08-26T063009.500.json
+
+###
+
+POST http://localhost:8070/seller/login
+Content-Type: application/json
+
+{
+  "id": "rosie22",
+  "password": "1234"
+}
+
+<> 2019-08-26T062940.500.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "12344"
+}
+
+<> 2019-08-26T062937.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234"
+}
+
+<> 2019-08-26T062934.200.json
+
+###
+
+POST http://localhost:8070/seller/login
+Content-Type: application/json
+
+{
+  "id": "rosie22",
+  "password": "1234"
+}
+
+<> 2019-08-26T062851.500.json
+
+###
+
+GET http://localhost:8070/seller/roo
+Content-Type: application/json
+
+<> 2019-08-26T060122.200.json
+
+###
+
+GET http://localhost:8070/seller/rosie
+Content-Type: application/json
+
+<> 2019-08-26T060116.200.json
+
+###
+
+GET http://localhost:8070/seller/rosie
+Content-Type: application/json
+
+<> 2019-08-26T055627.200.json
+
+###
+
+GET http://localhost:8070/seller/rosie2
+Content-Type: application/json
+
+<> 2019-08-26T055625.200.json
+
+###
+
+GET http://localhost:8070/seller/rosie
+Content-Type: application/json
+
+<> 2019-08-26T055623.200.json
+
+###
+
+GET http://localhost:8070/seller/rosie
+Content-Type: application/json
+
+<> 2019-08-26T053250.200.json
+
+###
+
+GET http://localhost:8070/seller/roo
+Content-Type: application/json
+
+<> 2019-08-26T053208.200.json
+
+###
+
+GET http://localhost:8070/seller/roo
+Content-Type: application/json
+
+<> 2019-08-26T053127.404.json
+
+###
+
+POST http://localhost:8070/seller
+Content-Type: application/json
+
+{
+  "id": "rosie2",
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-1234-5678",
+  "email": "rosie@naver.com",
+  "address": "행당동"
+}
+
+<> 2019-08-26T052637.200.json
+
+###
+
+POST http://localhost:8070/seller
+Content-Type: application/json
+
+{
+  "id": "rosie2",
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-1234-5678",
+  "email": "rosie@naver.com",
+  "address": "행당동"
+}
+
+<> 2019-08-26T052609.200.json
+
+###
+
+POST http://localhost:8070/seller
+Content-Type: application/json
+
+{
+  "id": "rosie",
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-1234-5678",
+  "email": "rosie@naver.com",
+  "address": "행당동"
+}
+
+<> 2019-08-26T052544.200.json
+
+###
+
+POST http://localhost:8070/seller
+Content-Type: application/json
+
+{
+  "id": "rosie",
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-1234-567",
+  "email": "naver.com",
+  "address": "행당동"
+}
+
+<> 2019-08-26T052533.200.json
+
+###
+
+POST http://localhost:8070/seller
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-1234-567",
+  "email": "naver.com",
+  "address": "행당동"
+}
+
+<> 2019-08-26T052450.200.json
+
+###
+
+POST http://localhost:8070/seller
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-1234-567",
+  "email": "naver.com",
+  "address": "행당동"
+}
+
+<> 2019-08-26T052347.500.json
+
+###
+
+POST http://localhost:8070/seller
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-1234-567",
+  "email": "naver.com",
+  "address": "행당동"
+}
+
+<> 2019-08-26T052305.500.json
+
+###
+
+GET http://localhost:8070/cookie
+Cookie: user=ppiyo
+
+<> 2019-08-23T050536.200.txt
+
+###
+
+GET http://localhost:8070/hello
+
+<> 2019-08-23T050533.200.html
+
+###
+
+GET http://localhost:8070/dev/hello
+
+<> 2019-08-23T050531.200.json
+
+###
+
+GET http://localhost:8070/dev/hello
+Authorization: DEV
+
+<> 2019-08-23T050528.200.txt
+
+###
+
+GET http://localhost:8070/real/hello
+Authorization: PRODUCTION
+
+<> 2019-08-23T050526.200.txt
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234"
+}
+
+<> 2019-08-23T050520.200.json
+
+###
+
+GET http://localhost:8070/real/hello
+Authorization: PRODUCTION
+
+<> 2019-08-23T042941.200.txt
+
+###
+
+GET http://localhost:8070/dev/hello
+Authorization: DEV
+
+<> 2019-08-23T042938.200.txt
+
+###
+
+GET http://localhost:8070/dev/hello
+
+<> 2019-08-23T042935.200.json
+
+###
+
+GET http://localhost:8070/hello
+
+<> 2019-08-23T042932.200.html
+
+###
+
+GET http://localhost:8070/cookie
+Cookie: user=ppiyo
+
+<> 2019-08-23T042930.200.txt
+
+###
+
+GET http://localhost:8070/real/hello
+Authorization: PRODUCTION
+
+<> 2019-08-23T042911.200.txt
+
+###
+
+GET http://localhost:8070/real/hello
+Authorization: PRODUCTION
+
+<> 2019-08-23T042818.200.txt
+
+###
+
+GET http://localhost:8070/hello
+
+<> 2019-08-23T042814.200.txt
+
+###
+
+GET http://localhost:8070/dev/hello
+
+<> 2019-08-23T042811.404.json
+
+###
+
+GET http://localhost:8070/dev/hello
+Authorization: DEV
+
+<> 2019-08-23T042809.404.json
+
+###
+
+GET http://localhost:8070/dev/hello
+
+###
+
+GET http://localhost:8070/dev/hello
+
+<> 2019-08-23T040931.404.json
+
+###
+
+GET http://localhost:8070/hello
+
+<> 2019-08-23T040928.200.html
+
+###
+
+GET http://localhost:8070/cookie
+Cookie: user=ppiyo
+
+<> 2019-08-23T040923.200.txt
+
+###
+
+GET http://localhost:8070/dev/hello
+
+<> 2019-08-23T110113.404.json
+
+###
+
+GET http://localhost:8070/hello
+
+<> 2019-08-23T110110.200.html
+
+###
+
+GET http://localhost:8070/real/hello
+Authorization: PRODUCTION
+
+<> 2019-08-23T105748.404.json
+
+###
+
+GET http://localhost:8070/dev/hello
+Authorization: DEV
+
+<> 2019-08-23T105744.404.json
+
+###
+
+GET http://localhost:8070/dev/hello
+
+<> 2019-08-23T105723.404.json
+
+###
+
+GET http://localhost:8070/hello
+
+<> 2019-08-23T105712.200.html
+
+###
+

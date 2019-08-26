@@ -1,9 +1,12 @@
 package net.nigne.yourtour.user.application;
 
 import lombok.RequiredArgsConstructor;
+import net.nigne.yourtour.error.ErrorCode;
 import net.nigne.yourtour.exception.AlreadyReservationException;
+import net.nigne.yourtour.exception.BusinessException;
 import net.nigne.yourtour.exception.NotFoundException;
 import net.nigne.yourtour.user.application.dto.SellerCreateDto;
+import net.nigne.yourtour.user.application.dto.SellerLoginDto;
 import net.nigne.yourtour.user.domain.Seller;
 import net.nigne.yourtour.user.domain.SellerRepository;
 import net.nigne.yourtour.user.infra.SellerTranslate;
@@ -26,5 +29,15 @@ public class SellerService {
     public Seller findById(String id) {
         return sellerRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException(String.format("[%s] 존재하지 않는 판매자입니다.", id)));
+    }
+
+    public Seller loginSeller(SellerLoginDto loginDto) {
+        Seller seller = sellerRepository.findById(loginDto.getId())
+                .orElseThrow(() -> new NotFoundException(String.format("[%s] 존재하지 않는 아이디입니다.", loginDto.getId())));
+        if(seller.getUser().getPassword().equals(loginDto.getPassword())) {
+            return seller;
+        }
+
+        throw new BusinessException(ErrorCode.HANDLE_ACCESS_DENIED, "비밀번호가 일치하지 않습니다.");
     }
 }

@@ -1,0 +1,11 @@
+{
+  "code": "OK",
+  "message": "요청이 성공하였습니다.",
+  "data": {
+    "id": "rosie",
+    "name": "로지",
+    "address": "경기도 남양주시",
+    "email": "rosie@daum.net",
+    "phoneNumber": "010-1122-3344"
+  }
+}
