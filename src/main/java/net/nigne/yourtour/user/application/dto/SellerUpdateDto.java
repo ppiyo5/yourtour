@@ -10,7 +10,7 @@ import javax.validation.constraints.Pattern;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class BuyerUpdateDto {
+public class SellerUpdateDto {
 
     @NotBlank
     private String password;
@@ -21,7 +21,7 @@ public class BuyerUpdateDto {
     @Pattern(regexp = "^01(?:0|1|[6-9])-\\d{3,4}-\\d{4}$")
     private String phoneNumber;
 
-    @Email(regexp = "^(.+)@(.+)$")
+    @Email(regexp =  "^(.+)@(.+)$")
     private String email;
 
     @NotBlank

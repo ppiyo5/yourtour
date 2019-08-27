@@ -79,4 +79,30 @@ Content-Type: application/json
   "password": "1234"
 }
 
+###판매자 업데이트(없는 아이디)
+PUT http://localhost:8070/seller
+Content-Type: application/json
+user-id: rosi
+
+{
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-1234-5678",
+  "email": "rosie@naver.com",
+  "address": "행당동"
+}
+
+###판매자 업데이트(정상)
+PUT http://localhost:8070/seller
+Content-Type: application/json
+user-id: rosie
+
+{
+  "password": "1234",
+  "name": "로지",
+  "phoneNumber": "010-1234-5678",
+  "email": "rosie@naver.com",
+  "address": "성수동"
+}
+
 ###

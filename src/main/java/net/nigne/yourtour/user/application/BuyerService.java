@@ -35,7 +35,7 @@ public class BuyerService {
 
     public Buyer updateBuyer(String id, BuyerUpdateDto updateDto) {
         Buyer buyer = buyerRepository.findById(id)
-                .orElseThrow(() -> new NotFoundException(String.format("[%s] 존재하지 않는 구매자 입니다.")));
+                .orElseThrow(() -> new NotFoundException(String.format("[%s] 존재하지 않는 구매자 입니다.", id)));
 
         buyer.update(updateDto.getName(), updateDto.getPassword(), updateDto.getPhoneNumber(), updateDto.getEmail(), updateDto.getAddress());
         return buyer;

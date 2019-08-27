@@ -40,18 +40,30 @@ Content-Type: application/json
 
 < ./post.json
 
-###구매자 변경
+###구매자 변경(없는 아이디)
 PUT http://localhost:8070/buyer
 Content-Type: application/json
-#user-id: test
+user-id: tes
 
 {
-  "id": "test",
   "password": "1234",
   "name": "HanSso",
   "phoneNumber": "010-1234-5678",
   "email": "ppiyo@naver.com",
   "address": "반포동"
+}
+
+###구매자 변경(정상)
+PUT http://localhost:8070/buyer
+Content-Type: application/json
+user-id: test
+
+{
+  "password": "1234",
+  "name": "HanSso",
+  "phoneNumber": "010-1234-5678",
+  "email": "ppiyo@naver.com",
+  "address": "청담동"
 }
 
 ### 구매자 로그인(없는 아이디)
