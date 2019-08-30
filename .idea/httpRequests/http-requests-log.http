@@ -1,3 +1,159 @@
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "sojin",
+  "password": "1234"
+}
+
+<> 2019-08-28T122304.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "12344"
+}
+
+<> 2019-08-28T122257.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234"
+}
+
+<> 2019-08-28T122251.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234"
+}
+
+<> 2019-08-27T122919.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234"
+}
+
+<> 2019-08-27T122542.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234"
+}
+
+<> 2019-08-27T122540.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "12344"
+}
+
+<> 2019-08-27T122157.200.json
+
+###
+
+PUT http://localhost:8070/buyer
+Content-Type: application/json
+user-id: test
+
+{
+  "password": "1234",
+  "name": "HanSso",
+  "phoneNumber": "010-1234-5678",
+  "email": "ppiyo@naver.com",
+  "address": "청담동"
+}
+
+<> 2019-08-27T122154.200.json
+
+###
+
+PUT http://localhost:8070/buyer
+Content-Type: application/json
+user-id: tes
+
+{
+  "password": "1234",
+  "name": "HanSso",
+  "phoneNumber": "010-1234-5678",
+  "email": "ppiyo@naver.com",
+  "address": "반포동"
+}
+
+<> 2019-08-27T121713.200.json
+
+###
+
+PUT http://localhost:8070/buyer
+Content-Type: application/json
+user-id: tes
+
+{
+  "password": "1234",
+  "name": "HanSso",
+  "phoneNumber": "010-1234-5678",
+  "email": "ppiyo@naver.com",
+  "address": "반포동"
+}
+
+<> 2019-08-27T121116.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234"
+}
+
+<> 2019-08-27T121109.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234"
+}
+
+<> 2019-08-27T121106.200.json
+
+###
+
 PUT http://localhost:8070/seller
 Content-Type: application/json
 user-id: rosie
@@ -469,147 +625,6 @@ Content-Type: application/json
 }
 
 <> 2019-08-26T052637.200.json
-
-###
-
-POST http://localhost:8070/seller
-Content-Type: application/json
-
-{
-  "id": "rosie2",
-  "password": "1234",
-  "name": "한소진",
-  "phoneNumber": "010-1234-5678",
-  "email": "rosie@naver.com",
-  "address": "행당동"
-}
-
-<> 2019-08-26T052609.200.json
-
-###
-
-POST http://localhost:8070/seller
-Content-Type: application/json
-
-{
-  "id": "rosie",
-  "password": "1234",
-  "name": "한소진",
-  "phoneNumber": "010-1234-5678",
-  "email": "rosie@naver.com",
-  "address": "행당동"
-}
-
-<> 2019-08-26T052544.200.json
-
-###
-
-POST http://localhost:8070/seller
-Content-Type: application/json
-
-{
-  "id": "rosie",
-  "password": "1234",
-  "name": "한소진",
-  "phoneNumber": "010-1234-567",
-  "email": "naver.com",
-  "address": "행당동"
-}
-
-<> 2019-08-26T052533.200.json
-
-###
-
-POST http://localhost:8070/seller
-Content-Type: application/json
-
-{
-  "id": "test",
-  "password": "1234",
-  "name": "한소진",
-  "phoneNumber": "010-1234-567",
-  "email": "naver.com",
-  "address": "행당동"
-}
-
-<> 2019-08-26T052450.200.json
-
-###
-
-POST http://localhost:8070/seller
-Content-Type: application/json
-
-{
-  "id": "test",
-  "password": "1234",
-  "name": "한소진",
-  "phoneNumber": "010-1234-567",
-  "email": "naver.com",
-  "address": "행당동"
-}
-
-<> 2019-08-26T052347.500.json
-
-###
-
-POST http://localhost:8070/seller
-Content-Type: application/json
-
-{
-  "id": "test",
-  "password": "1234",
-  "name": "한소진",
-  "phoneNumber": "010-1234-567",
-  "email": "naver.com",
-  "address": "행당동"
-}
-
-<> 2019-08-26T052305.500.json
-
-###
-
-GET http://localhost:8070/cookie
-Cookie: user=ppiyo
-
-<> 2019-08-23T050536.200.txt
-
-###
-
-GET http://localhost:8070/hello
-
-<> 2019-08-23T050533.200.html
-
-###
-
-GET http://localhost:8070/dev/hello
-
-<> 2019-08-23T050531.200.json
-
-###
-
-GET http://localhost:8070/dev/hello
-Authorization: DEV
-
-<> 2019-08-23T050528.200.txt
-
-###
-
-GET http://localhost:8070/real/hello
-Authorization: PRODUCTION
-
-<> 2019-08-23T050526.200.txt
-
-###
-
-POST http://localhost:8070/buyer/login
-Content-Type: application/json
-
-{
-  "id": "test",
-  "password": "1234"
-}
-
-<> 2019-08-23T050520.200.json
 
 ###
 

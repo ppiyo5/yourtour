@@ -48,4 +48,13 @@ spring:
       max-file-size: -1
       max-request-size: -1
 
+---
+
+api:
+  host: https://openapi.naver.com
+  client:
+    id: T9RivJGI_WnbTjxtCizS
+    secret: sgEzE5NsPX
+
+
 
