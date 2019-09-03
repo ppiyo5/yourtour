@@ -15,6 +15,9 @@ public class EventTest {
         //when
         //then
         assertThat(event.isEventDate(LocalDate.of(2019, 5, 7))).isTrue();
+        assertThat(event.isEventDate(LocalDate.of(2019, 5, 8))).isTrue();
+        assertThat(event.isEventDate(LocalDate.of(2019, 5, 9))).isFalse();
+        assertThat(event.isEventDate(LocalDate.of(2019, 5, 6))).isFalse();
 
 
 
