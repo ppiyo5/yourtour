@@ -17,7 +17,6 @@ public class EnrollmentDto {
     private EventDto eventDto;
 
     @Builder
-
     public EnrollmentDto(String sellerId, EventDto eventDto) {
         this.sellerId = sellerId;
         this.eventDto = eventDto;

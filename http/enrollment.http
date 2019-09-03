@@ -1,0 +1,20 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+### 등록한 회원과 로그인한 회원이 다릅니다.
+POST http://localhost:8070/enrollment
+Content-Type: application/json
+user-id: qqq
+Cookie: JSESSIONID=0DD059627BCAB028FCFDEFBB300BFFCE
+
+{
+  "startDate": "2019-05-07",
+  "endDate": "2019-05-08",
+  "periodPercent": 20.0
+}
+
+###

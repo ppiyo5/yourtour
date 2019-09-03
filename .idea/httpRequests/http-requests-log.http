@@ -1,3 +1,31 @@
+POST http://localhost:8070/enrollment
+Content-Type: application/json
+user-id: qqq
+Cookie: JSESSIONID=0DD059627BCAB028FCFDEFBB300BFFCE
+
+{
+  "startDate": "2019-05-07",
+  "endDate": "2019-05-08",
+  "periodPercent": 20.0
+}
+
+<> 2019-09-03T071436.200.json
+
+###
+
+POST http://localhost:8070/enrollment
+Content-Type: application/json
+user-id: qqq
+Cookie: JSESSIONID=0DD059627BCAB028FCFDEFBB300BFFCE
+
+{
+  "startDate": "2019-05-07",
+  "endDate": "2019-05-08",
+  "periodPercent": 20.0
+}
+
+###
+
 POST http://localhost:8070/buyer/login
 Content-Type: application/json
 
@@ -602,29 +630,6 @@ GET http://localhost:8070/seller/roo
 Content-Type: application/json
 
 <> 2019-08-26T053208.200.json
-
-###
-
-GET http://localhost:8070/seller/roo
-Content-Type: application/json
-
-<> 2019-08-26T053127.404.json
-
-###
-
-POST http://localhost:8070/seller
-Content-Type: application/json
-
-{
-  "id": "rosie2",
-  "password": "1234",
-  "name": "한소진",
-  "phoneNumber": "010-1234-5678",
-  "email": "rosie@naver.com",
-  "address": "행당동"
-}
-
-<> 2019-08-26T052637.200.json
 
 ###
 
