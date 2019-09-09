@@ -1,5 +1,6 @@
 package net.nigne.yourtour.enrollment.application.dto;
 
+import net.nigne.yourtour.enrollment.domain.Count;
 import net.nigne.yourtour.exception.NotFoundException;
 import net.nigne.yourtour.exception.WrongValueException;
 import org.junit.Test;

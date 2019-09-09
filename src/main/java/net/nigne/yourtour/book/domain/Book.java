@@ -22,7 +22,7 @@ public class Book {
     private Name name;
 
     @Embedded
-    private Auther auther;
+    private Author author;
 
     @Embedded
     private Category category;
@@ -33,9 +33,9 @@ public class Book {
     private Long price;
 
     @Builder(builderMethodName = "createBuilder")
-    public Book(String name, String auther, String category, String publisher, Long price) {
+    public Book(String name, String author, String category, String publisher, Long price) {
         this.name = new Name(name);
-        this.auther = new Auther(auther);
+        this.author = new Author(author);
         this.category = new Category(category);
         this.publisher = new Publisher(publisher);
         this.price = price;
@@ -49,10 +49,10 @@ public class Book {
     }
 
     public String getAuther() {
-        if(ObjectUtils.isEmpty(auther)) {
+        if(ObjectUtils.isEmpty(author)) {
             return "";
         }
-        return auther.getAuther();
+        return author.getAuther();
     }
 
     public String getCategory() {
@@ -74,7 +74,7 @@ public class Book {
         return "Book{" +
                 "id=" + id +
                 ", name=" + name +
-                ", auther=" + auther +
+                ", author=" + author +
                 ", category=" + category +
                 ", publisher=" + publisher +
                 ", price=" + price +

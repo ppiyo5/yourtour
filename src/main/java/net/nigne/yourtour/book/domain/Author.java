@@ -11,11 +11,11 @@ import javax.persistence.Embeddable;
 @Getter
 @Embeddable
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Auther {
+public class Author {
 
     private String auther;
 
-    public Auther(String auther) {
+    public Author(String auther) {
         this.auther = validation(auther);
     }
 

@@ -5,6 +5,102 @@
 # * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
 
+### 등록된 책이 없습니다.
+POST http://localhost:8070/enrollment
+Content-Type: application/json
+user-id: rosie
+
+{
+  "startDate": "2019-05-07",
+  "endDate": "2019-05-08",
+  "periodPercent": 20.0
+}
+
+### 새책 세션 저장
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 1,
+  "count" : 15
+}
+
+### 중고책 세션 저장
+POST http://localhost:8070/registered-books/used
+Content-Type: application/json
+user-id: rosie
+Cookie: JSESSIONID=E59B58101816F0BEA4FE8F4A8B4F0E29
+
+{
+  "bookId": 2,
+  "amount": 1000
+}
+
+### 새책 세션 저장(잘못된 파라미터)
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 1,
+  "count": 0
+}
+
+### 중고책 세션 저장(잘못된 파라미터)
+POST http://localhost:8070/registered-books/used
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 1,
+  "amount": 999
+}
+
+### 중고책 세션 저장(없는 책 등록)
+POST http://localhost:8070/registered-books/used
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 200,
+  "amount": 1000
+}
+
+### 세션에 등록된 책들 저장
+POST http://localhost:8070/enrollment
+Content-Type: application/json
+user-id: rosie
+Cookie: JSESSIONID=E59B58101816F0BEA4FE8F4A8B4F0E29
+
+{
+  "startDate": "2019-05-07",
+  "endDate": "2019-05-19",
+  "periodPercent": 20.0
+}
+
+### 이벤트 기간 잘못 선정
+POST http://localhost:8070/enrollment
+Content-Type: application/json
+user-id: rosie
+
+{
+  "startDate": "2019-05-07",
+  "endDate": "2019-05-06",
+  "periodPercent": 20.0
+}
+
+### 잘못된 할인율 파라미터
+POST http://localhost:8070/enrollment
+Content-Type: application/json
+user-id: sehee.kwon
+
+{
+  "startDate": "2019-05-07",
+  "endDate": "2019-05-07",
+  "periodPercent": -1
+}
+
 ### 등록한 회원과 로그인한 회원이 다릅니다.
 POST http://localhost:8070/enrollment
 Content-Type: application/json
@@ -16,5 +112,20 @@ Cookie: JSESSIONID=0DD059627BCAB028FCFDEFBB300BFFCE
   "endDate": "2019-05-08",
   "periodPercent": 20.0
 }
+
+### 등록된 책 페이징 처리하여 조회
+GET http://localhost:8070/registered-books?pageNumber=1
+Content-Type: application/json
+user-id: rosie
+
+### 등록된 책 페이징 처리하여 조회
+GET http://localhost:8070/registered-books?pageNumber=2
+Content-Type: application/json
+user-id: rosie
+
+###
+GET http://localhost:8070/registered-books?pageNumber=3
+Content-Type: application/json
+user-id: rosie
 
 ###

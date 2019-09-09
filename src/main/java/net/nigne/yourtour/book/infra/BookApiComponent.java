@@ -28,12 +28,15 @@ public class BookApiComponent {
 
     public void save(String category) {
         ResponseEntity<BookApiResponseDto> response = execute(category);
+
         response.getBody().getItems()
                 .forEach(item -> saveItem(item, category));
     }
 
     private void saveItem(BookApiResponseDto.Item item, String category) {
-        bookRepository.save(BookTran)
+
+        bookRepository.save(BookTranslator.translate(item, category));
+        log.info("item: {}", item.toString());
     }
 
     public ResponseEntity<BookApiResponseDto> execute(String category) {

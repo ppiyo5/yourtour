@@ -6,9 +6,12 @@ import net.nigne.yourtour.book.application.dto.RegisteredBookRequestDto;
 import net.nigne.yourtour.book.domain.Book;
 import net.nigne.yourtour.book.domain.RegisteredBook;
 import net.nigne.yourtour.book.domain.RegisteredBookRepository;
+import net.nigne.yourtour.book.infra.RegisteredBookTranslator;
+import net.nigne.yourtour.book.infra.dto.RegisteredBookResponse;
 import net.nigne.yourtour.enrollment.domain.SellType;
 import net.nigne.yourtour.exception.NotFoundException;
 import net.nigne.yourtour.exception.WrongValueException;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpSession;
@@ -64,6 +67,17 @@ public class RegisteredBookService {
                 .sellType(dto.getSellType())
                 .enrollmentId(enrollmentId)
                 .build();
+    }
+
+    public List<RegisteredBookResponse> findBy(Pageable convert) {
+        List<RegisteredBook> registeredBooks = registeredBookRepository.findAll(convert)
+                .getContent();
+
+        return registeredBooks.stream()
+                .map(registeredBook -> {
+                    String bookName = bookService.findById(registeredBook.getId()).getName();
+                    return RegisteredBookTranslator.translate(registeredBook, bookName);
+                }).collect(Collectors.toList());
     }
 
 
