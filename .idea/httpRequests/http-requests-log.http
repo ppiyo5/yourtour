@@ -1,3 +1,399 @@
+POST http://localhost:8070/reservation
+Content-Type: application/json
+user-id: test
+
+{
+  "bookId": "100"
+}
+
+<> 2019-09-16T082200.200.json
+
+###
+
+POST http://localhost:8070/reservation
+Content-Type: application/json
+user-id: test
+
+{
+  "bookId": "1"
+}
+
+<> 2019-09-16T082155.200.json
+
+###
+
+POST http://localhost:8070/reservation
+Content-Type: application/json
+user-id: test
+
+{
+  "bookId": "1"
+}
+
+<> 2019-09-16T082143.200.json
+
+###
+
+POST http://localhost:8070/reservation
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": "1"
+}
+
+<> 2019-09-16T082137.200.json
+
+###
+
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 1,
+  "count" : 15
+}
+
+<> 2019-09-16T081202.200.json
+
+###
+
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: test
+
+{
+  "bookId": 1,
+  "count" : 15
+}
+
+<> 2019-09-16T081159.200.json
+
+###
+
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: rosie2
+
+{
+  "bookId": 1,
+  "count" : 15
+}
+
+<> 2019-09-16T081152.200.json
+
+###
+
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 1,
+  "count" : 15
+}
+
+<> 2019-09-16T081129.200.json
+
+###
+
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: test
+
+{
+  "bookId": 30,
+  "count" : 15
+}
+
+<> 2019-09-16T080611.200.json
+
+###
+
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 30,
+  "count" : 15
+}
+
+<> 2019-09-16T080555.200.json
+
+###
+
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 274,
+  "count" : 15
+}
+
+<> 2019-09-16T080543.200.json
+
+###
+
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 300,
+  "count" : 15
+}
+
+<> 2019-09-16T080536.200.json
+
+###
+
+POST http://localhost:8070/enrollment
+Content-Type: application/json
+user-id: rosie
+Cookie: JSESSIONID=E59B58101816F0BEA4FE8F4A8B4F0E29
+
+{
+  "startDate": "2019-05-07",
+  "endDate": "2019-05-19",
+  "periodPercent": 20.0
+}
+
+<> 2019-09-16T080524.200.json
+
+###
+
+POST http://localhost:8070/registered-books/used
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 200,
+  "amount": 1000
+}
+
+<> 2019-09-16T080521.200.json
+
+###
+
+POST http://localhost:8070/registered-books/used
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 1,
+  "amount": 999
+}
+
+<> 2019-09-16T080519.200.json
+
+###
+
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 1,
+  "count": 0
+}
+
+<> 2019-09-16T080517.200.json
+
+###
+
+POST http://localhost:8070/registered-books/used
+Content-Type: application/json
+user-id: rosie
+Cookie: JSESSIONID=E59B58101816F0BEA4FE8F4A8B4F0E29
+
+{
+  "bookId": 2,
+  "amount": 1000
+}
+
+<> 2019-09-16T080513.200.json
+
+###
+
+POST http://localhost:8070/registered-books/new
+Content-Type: application/json
+user-id: rosie
+
+{
+  "bookId": 1,
+  "count" : 15
+}
+
+<> 2019-09-16T080502.200.json
+
+###
+
+GET http://localhost:8070/books/1
+Content-Type: application/json
+
+<> 2019-09-16T080455.200.json
+
+###
+
+GET http://localhost:8070/books/1
+Content-Type: application/json
+
+<> 2019-09-16T080422.200.json
+
+###
+
+POST http://localhost:8070/enrollment
+Content-Type: application/json
+user-id: rosie
+
+{
+  "startDate": "2019-05-07",
+  "endDate": "2019-05-08",
+  "periodPercent": 20.0
+}
+
+<> 2019-09-16T080151.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234"
+}
+
+<> 2019-09-16T080146.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "12344"
+}
+
+<> 2019-09-16T080145.200.json
+
+###
+
+POST http://localhost:8070/buyer/login
+Content-Type: application/json
+
+{
+  "id": "sojin",
+  "password": "1234"
+}
+
+<> 2019-09-16T080143.200.json
+
+###
+
+PUT http://localhost:8070/buyer
+Content-Type: application/json
+user-id: test
+
+{
+  "password": "1234",
+  "name": "HanSso",
+  "phoneNumber": "010-1234-5678",
+  "email": "ppiyo@naver.com",
+  "address": "청담동"
+}
+
+<> 2019-09-16T080140.200.json
+
+###
+
+PUT http://localhost:8070/buyer
+Content-Type: application/json
+user-id: tes
+
+{
+  "password": "1234",
+  "name": "HanSso",
+  "phoneNumber": "010-1234-5678",
+  "email": "ppiyo@naver.com",
+  "address": "반포동"
+}
+
+<> 2019-09-16T080137.200.json
+
+###
+
+POST http://localhost:8070/buyer
+Content-Type: application/json
+
+< C:/Users/SOJIN/Documents/yourtour/http/post.json
+
+<> 2019-09-16T080133.200.json
+
+###
+
+POST http://localhost:8070/buyer
+Content-Type: application/json
+
+{
+  "id": "test",
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-1234-567",
+  "email": "naver.com",
+  "address": "행당동"
+}
+
+<> 2019-09-16T080129.200.json
+
+###
+
+GET http://localhost:8070/buyer/sojin
+Content-Type: application/json
+
+<> 2019-09-16T080126.200.json
+
+###
+
+GET http://localhost:8070/buyer/test
+Content-Type: application/json
+
+<> 2019-09-16T080121.200.json
+
+###
+
+GET http://localhost:8070/books/274
+Content-Type: application/json
+
+<> 2019-09-16T080109.200.json
+
+###
+
+GET http://localhost:8070/books
+Content-Type: application/json
+
+<> 2019-09-16T080054.200.json
+
+###
+
+GET http://localhost:8070/books/1
+Content-Type: application/json
+
+<> 2019-09-16T080050.200.json
+
+###
+
+GET http://localhost:8070/books/200
+Content-Type: application/json
+
+<> 2019-09-16T080046.200.json
+
+###
+
 POST http://localhost:8070/registered-books/new
 Content-Type: application/json
 user-id: rosie
@@ -191,421 +587,6 @@ user-id: rosie
 }
 
 <> 2019-09-09T043708.200.json
-
-###
-
-POST http://localhost:8070/registered-books/new
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 1,
-  "count": 1
-}
-
-<> 2019-09-09T043702.200.json
-
-###
-
-GET http://localhost:8070/books/1
-Content-Type: application/json
-
-<> 2019-09-09T043652.200.json
-
-###
-
-GET http://localhost:8070/books
-Content-Type: application/json
-
-<> 2019-09-09T043638.200.json
-
-###
-
-GET http://localhost:8070/books/1
-Content-Type: application/json
-
-<> 2019-09-09T043630.200.json
-
-###
-
-POST http://localhost:8070/registered-books/new
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 1,
-  "count": 15
-}
-
-<> 2019-09-09T043616.200.json
-
-###
-
-POST http://localhost:8070/enrollment
-Content-Type: application/json
-user-id: rosie
-
-{
-  "startDate": "2019-05-07",
-  "endDate": "2019-05-08",
-  "periodPercent": 20.0
-}
-
-<> 2019-09-09T043612.200.json
-
-###
-
-POST http://localhost:8070/enrollment
-Content-Type: application/json
-user-id: qqq
-
-{
-  "startDate": "2019-05-07",
-  "endDate": "2019-05-08",
-  "periodPercent": 20.0
-}
-
-<> 2019-09-09T043608.200.json
-
-###
-
-POST http://localhost:8070/registered-books/new
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 1,
-  "count": 15
-}
-
-<> 2019-09-09T043343.200.json
-
-###
-
-POST http://localhost:8070/registered-books/new
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 1,
-  "count": 15
-}
-
-<> 2019-09-09T043048.200.json
-
-###
-
-POST http://localhost:8070/enrollment
-Content-Type: application/json
-user-id: qqq
-
-{
-  "startDate": "2019-05-07",
-  "endDate": "2019-05-08",
-  "periodPercent": 20.0
-}
-
-<> 2019-09-09T043042.200.json
-
-###
-
-GET http://localhost:8070/registered-books?pageNumber=1
-Content-Type: application/json
-user-id: rosie
-
-<> 2019-09-09T043036.200.json
-
-###
-
-POST http://localhost:8070/enrollment
-Content-Type: application/json
-user-id: rosie
-
-{
-  "startDate": "2019-05-07",
-  "endDate": "2019-05-19",
-  "periodPercent": 20.0
-}
-
-<> 2019-09-09T043019.200.json
-
-###
-
-POST http://localhost:8070/registered-books/new
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 1,
-  "count": 15
-}
-
-<> 2019-09-09T043011.200.json
-
-###
-
-POST http://localhost:8070/registered-books/used
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 2,
-  "amount": 1000
-}
-
-<> 2019-09-09T043008.200.json
-
-###
-
-POST http://localhost:8070/registered-books/used
-Content-Type: application/json
-user-id: rosie
-Cookie: JSESSIONID=002DB45D58208252C5D09FF46440A0EC
-
-{
-  "bookId": 2,
-  "amount": 1000
-}
-
-<> 2019-09-09T042917.200.json
-
-###
-
-POST http://localhost:8070/registered-books/used
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 2,
-  "amount": 1000
-}
-
-<> 2019-09-09T042905.200.json
-
-###
-
-POST http://localhost:8070/registered-books/used
-Content-Type: application/json
-user-id: rosie
-Cookie: JSESSIONID=81D4D5C38D2195BB7C196CA70745B0C0
-
-{
-  "bookId": 2,
-  "amount": 1000
-}
-
-<> 2019-09-09T042852.200.json
-
-###
-
-POST http://localhost:8070/registered-books/used
-Content-Type: application/json
-user-id: rosie
-Cookie: JSESSIONID=BBE18BD0AACF7F6ACDC2C8EEB7906B97
-
-{
-  "bookId": 2,
-  "amount": 1000
-}
-
-<> 2019-09-09T042843.200.json
-
-###
-
-POST http://localhost:8070/registered-books/new
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 1,
-  "count": 15
-}
-
-<> 2019-09-09T042752.200.json
-
-###
-
-GET http://localhost:8070/registered-books?pageNumber=1
-Content-Type: application/json
-user-id: cys
-
-<> 2019-09-09T042721.200.json
-
-###
-
-POST http://localhost:8070/registered-books/new
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 1,
-  "count": 15
-}
-
-<> 2019-09-09T042710.200.json
-
-###
-
-GET http://localhost:8070/registered-books?pageNumber=3
-Content-Type: application/json
-user-id: cys
-
-<> 2019-09-09T042703.200.json
-
-###
-
-GET http://localhost:8070/registered-books?pageNumber=2
-Content-Type: application/json
-user-id: cys
-
-<> 2019-09-09T042700.200.json
-
-###
-
-GET http://localhost:8070/registered-books?pageNumber=1
-Content-Type: application/json
-user-id: cys
-
-<> 2019-09-09T042655.200.json
-
-###
-
-POST http://localhost:8070/enrollment
-Content-Type: application/json
-user-id: qqq
-Cookie: JSESSIONID=961EF3F9497857B431C298D38757C362
-
-{
-  "startDate": "2019-05-07",
-  "endDate": "2019-05-08",
-  "periodPercent": 20.0
-}
-
-<> 2019-09-09T042636.200.json
-
-###
-
-POST http://localhost:8070/enrollment
-Content-Type: application/json
-user-id: qqq
-Cookie: JSESSIONID=0DD059627BCAB028FCFDEFBB300BFFCE
-
-{
-  "startDate": "2019-05-07",
-  "endDate": "2019-05-08",
-  "periodPercent": 20.0
-}
-
-<> 2019-09-09T042628.200.json
-
-###
-
-POST http://localhost:8070/enrollment
-Content-Type: application/json
-user-id: sehee.kwon
-
-{
-  "startDate": "2019-05-07",
-  "endDate": "2019-05-07",
-  "periodPercent": -1
-}
-
-<> 2019-09-09T042624.200.json
-
-###
-
-POST http://localhost:8070/registered-books/new
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 1,
-  "count": 15
-}
-
-<> 2019-09-09T042617.200.json
-
-###
-
-POST http://localhost:8070/registered-books/used
-Content-Type: application/json
-user-id: rosie
-Cookie: JSESSIONID=BBE18BD0AACF7F6ACDC2C8EEB7906B97
-
-{
-  "bookId": 2,
-  "amount": 1000
-}
-
-<> 2019-09-09T042610.200.json
-
-###
-
-POST http://localhost:8070/registered-books/used
-Content-Type: application/json
-user-id: rosie
-Cookie: JSESSIONID=E59B58101816F0BEA4FE8F4A8B4F0E29
-
-{
-  "bookId": 2,
-  "amount": 1000
-}
-
-<> 2019-09-09T042559.200.json
-
-###
-
-POST http://localhost:8070/registered-books/new
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 1,
-  "count": 0
-}
-
-<> 2019-09-09T042555.200.json
-
-###
-
-POST http://localhost:8070/registered-books/used
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 1,
-  "amount": 999
-}
-
-<> 2019-09-09T042552.200.json
-
-###
-
-POST http://localhost:8070/registered-books/used
-Content-Type: application/json
-user-id: rosie
-
-{
-  "bookId": 200,
-  "amount": 1000
-}
-
-<> 2019-09-09T042547.200.json
-
-###
-
-POST http://localhost:8070/enrollment
-Content-Type: application/json
-user-id: rosie
-Cookie: JSESSIONID=59C54FB2D0FC8F6D616ED323F375658D
-
-{
-  "startDate": "2019-05-07",
-  "endDate": "2019-05-19",
-  "periodPercent": 20.0
-}
-
-<> 2019-09-09T042541.200.json
 
 ###
 

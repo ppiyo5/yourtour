@@ -1,6 +1,7 @@
 package net.nigne.yourtour.enrollment.ui;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import net.nigne.yourtour.book.domain.BookRepository;
 import net.nigne.yourtour.enrollment.domain.EnrollmentRepository;
 import net.nigne.yourtour.response.ApiResponse;
 import net.nigne.yourtour.response.ApiResponseCode;
@@ -33,6 +34,14 @@ public class EnrollmentContollerTest {
 
     @Autowired
     private EnrollmentRepository enrollmentRepository;
+
+    @Autowired
+    private BookRepository bookRepository;
+
+    @Test
+    public void 책_DB_삭제() {
+        bookRepository.deleteAll();
+    }
 
     @After
     public void tearDown() throws Exception {

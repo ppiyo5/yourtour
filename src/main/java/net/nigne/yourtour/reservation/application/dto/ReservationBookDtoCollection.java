@@ -5,6 +5,7 @@ import net.nigne.yourtour.book.domain.Book;
 import net.nigne.yourtour.book.domain.RegisteredBook;
 import net.nigne.yourtour.enrollment.domain.Enrollment;
 import net.nigne.yourtour.reservation.domain.Reservations;
+import net.nigne.yourtour.reservation.infra.ReservationTranslate;
 import org.springframework.util.CollectionUtils;
 
 import java.util.Collections;
@@ -21,10 +22,10 @@ public class ReservationBookDtoCollection {
     private List<ReservationBookDto> reservationBooks;
 
     ReservationBookDtoCollection(Reservations reservations, List<RegisteredBook> registeredBookList, List<Book> bookList, List<Enrollment> enrollmentList) {
-//        reservationBooks = changeManyBuy(reservations.getReservations().stream()
-//                .map(reservation ->
-//                        ReservationTranslate)
-//        )
+        reservationBooks = changeManyBuy(reservations.getReservations().stream()
+                .map(reservation ->
+                        ReservationTranslate.translate(reservation, registeredBookList, bookList, enrollmentList))
+                .collect(Collectors.toList()));
     }
 
     public Long computeDeliveryFee() {

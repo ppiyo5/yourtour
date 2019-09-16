@@ -12,16 +12,17 @@ import java.util.List;
 public class RegisteredBookSessionManager {
 
     public void addNewRegisteredBook(HttpSession session, RegisteredBookRequestDto dto) {
-        List<RegisteredBookDto> registeredBookDtos = HttpSessionUtil.getSessionRegisteredBook(session);
+        List<RegisteredBookDto> registeredBooks = HttpSessionUtil.getSessionRegisteredBook(session);
+
         for(int i = 0; i < dto.getCount(); i++) {
-            addRegisteredBook(registeredBookDtos, dto);
+            addRegisteredBook(registeredBooks, dto);
         }
-        HttpSessionUtil.setSessionRegisteredBook(session, registeredBookDtos);
+        HttpSessionUtil.setSessionRegisteredBook(session, registeredBooks);
     }
 
     public void addUsedRegisteredBook(HttpSession session, RegisteredBookRequestDto dto) {
-        List<RegisteredBookDto> registeredBookDtos = HttpSessionUtil.getSessionRegisteredBook(session);
-        addRegisteredBook(registeredBookDtos, dto);
+        List<RegisteredBookDto> registeredBooks = HttpSessionUtil.getSessionRegisteredBook(session);
+        addRegisteredBook(registeredBooks, dto);
 
     }
 
