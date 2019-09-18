@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Seller {
+public class Member {
 
     @Id
     private String id;
@@ -19,7 +19,7 @@ public class Seller {
     private User user;
 
     @Builder(builderMethodName = "createBuilder")
-    private Seller(final String id, final String name, final String password, final String phoneNumber, final String email, final String address) {
+    private Member(final String id, final String name, final String password, final String phoneNumber, final String email, final String address) {
         this.id = id;
         this.user = new User(name, password, phoneNumber, email, address);
     }
@@ -27,5 +27,4 @@ public class Seller {
     public void update(String name, String password, String phoneNumber, String email, String address) {
         user.update(name, password, phoneNumber, email, address);
     }
-
 }

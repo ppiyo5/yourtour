@@ -1,4 +1,4 @@
-package net.nigne.yourtour.enrollment.application.dto;
+package net.nigne.yourtour.enrollment.domain;
 
 import net.nigne.yourtour.enrollment.domain.Count;
 import net.nigne.yourtour.exception.NotFoundException;

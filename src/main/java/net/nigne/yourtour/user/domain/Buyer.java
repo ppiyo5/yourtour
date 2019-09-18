@@ -13,7 +13,6 @@ import javax.persistence.*;
 public class Buyer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     @Embedded

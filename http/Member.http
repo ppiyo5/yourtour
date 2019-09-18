@@ -1,0 +1,100 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+### 멤버 생성
+POST http://localhost:8070/member
+Content-Type: application/json
+
+< ./post.json
+
+### 멤버 생성 (파라미터 없음)
+POST http://localhost:8070/member
+Content-Type: application/json
+
+{
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-6520-0513",
+  "email": "ppiyo_@daum.net",
+  "address": "남양주"
+}
+
+### 멤버 조회 (없는 멤버)
+GET http://localhost:8070/member/rosie
+Content-Type: application/json
+
+### 멤버 조회 (정상)
+GET http://localhost:8070/member/ppiyo_
+Content-Type: application/json
+
+### 멤버 업데이트 (없는 멤버)
+PUT http://localhost:8070/member
+Content-Type: application/json
+user-id: rosie
+
+{
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-6520-0513",
+  "email": "ppiyo_@daum.net",
+  "address": "서울"
+}
+
+### 멤버 업데이트
+PUT http://localhost:8070/member
+Content-Type: application/json
+user-id: ppiyo_
+
+{
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-6520-0513",
+  "email": "ppiyo_@daum.net",
+  "address": "서울"
+}
+
+### 멤버 업데이트
+PUT http://localhost:8070/member/ppiyo_
+Content-Type: application/json
+
+{
+  "password": "1234",
+  "name": "한소진",
+  "phoneNumber": "010-6520-0513",
+  "email": "ppiyo_@daum.net",
+  "address": "서울"
+}
+
+### 멤버 로그인
+POST http://localhost:8070/member/login
+Content-Type: application/json
+
+{
+  "id": "ppiyo_",
+  "password": "1234"
+}
+
+### 멤버 로그인 (아이디 오류)
+POST http://localhost:8070/member/login
+Content-Type: application/json
+
+{
+  "id": "rosie",
+  "password": "1234"
+}
+
+### 멤버 로그인 (비밀번호 오류)
+POST http://localhost:8070/member/login
+Content-Type: application/json
+
+{
+  "id": "ppiyo_",
+  "password": "123"
+}
+
+###
+
